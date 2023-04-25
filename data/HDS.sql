@@ -30,7 +30,7 @@ VALUES
 (12, 'Tran Van Long', '0919882736', 'Neurology');
 
 
-CREATE TABLE patient(
+CREATE TABLE Patient(
 PatientID int primary key not null,
 Patient_Name varchar(50) not null,
 Phone_no varchar(11) not null,
@@ -131,16 +131,3 @@ INSERT INTO Room(Room_No, PatientID, Room_Type, Room_Status, Room_Charge) VALUES
 (422, 05, 'Double_Bed_Cabin', 'Available', 2500),
 (423, 03, 'Double_Bed_Cabin', 'UnAvailable', 3500),
 (424, 01, 'Single_Bed_Cabin', 'Available', 1360);
-
-
-CREATE TABLE Lab_Report(
-PatientID int not null,
-Patient_Category varchar(50),
-foreign key (PatientID) references Patient(PatientID) ON DELETE CASCADE
-);
-
-INSERT INTO Lab_Report(PatientID, Patient_Category) VALUES
-(09, 'In'),
-(01, 'In'),
-(03, 'In'),
-(04, 'Out');
