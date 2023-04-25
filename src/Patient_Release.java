@@ -218,7 +218,7 @@ public class Patient_Release extends javax.swing.JFrame {
                     "root", "hoangluan");
 
             Statement st = connection.createStatement();
-            String sql = "select Bill.BillID,Bill.PatientID,Patient.Patient_Name,Bill.Release_Date,Lab.Admission_Date,DATEDIFF(Bill.Release_Date, Lab.Admission_Date) AS No_Of_Days from Bill join Lab on Bill.PatientID = Lab.PatientID join Patient on Patient.PatientID = Lab.PatientID  join Lab_Report on Lab_Report.PatientID = patient.PatientID where Lab_Report.Patient_Category='In'";
+            String sql = "select Bill.BillID,Bill.PatientID,Patient.Patient_Name,Bill.Release_Date,Lab.Admission_Date,DATEDIFF(Bill.Release_Date, Lab.Admission_Date) AS No_Of_Days from Bill join Lab on Bill.PatientID = Lab.PatientID join Patient on Patient.PatientID = Lab.PatientID";
 
             ResultSet rs = st.executeQuery(sql);
 

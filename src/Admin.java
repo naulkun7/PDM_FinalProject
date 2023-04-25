@@ -198,12 +198,6 @@ public class Admin extends javax.swing.JFrame {
         new Lab().show();
     }// GEN-LAST:event_LabButton1ActionPerformed
 
-    private void LabButton2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_LabButton2ActionPerformed
-        // TODO add your handling code here:
-        this.hide();
-        new Lab_Report().show();
-    }// GEN-LAST:event_LabButton2ActionPerformed
-
     private void Back1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_Back1ActionPerformed
         // TODO add your handling code here:
 
