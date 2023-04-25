@@ -58,7 +58,7 @@ VALUES
 (12, 'Duy Nhat', '01987654321', 47, 'Jigatola', 'Cold', 'Male', 01),
 (13, 'Van Hau', '01871627437', 28, 'Uttra', 'Cancer', 'Male', 11),
 (14, 'Hieu Thu 2', '01909856772', 10, 'Kamargao', 'Cold', 'Male', 02),
-(15, 'Phuc GPA9.', '01987654321', 11, 'Sreenagar', 'Fever', 'Female', 09),
+(15, 'Phuc GPA4.', '01987654321', 11, 'Sreenagar', 'Fever', 'Female', 09),
 (16, 'Tai Chilling', '01988909876', 15, 'Dhaka', 'Cold', 'Male', 11)
 
 
@@ -111,7 +111,7 @@ INSERT INTO Bill (Release_Date, PatientID) VALUES
 
 CREATE TABLE Room(
 Room_No int primary key not null,
-PatientID int not null,
+PatientID int unique not null,
 Room_Type varchar(50) not null,
 Room_Status varchar(50) NOT NULL,
 Room_Charge int not null,
@@ -119,15 +119,15 @@ foreign key (PatientID) references patient(PatientID) ON DELETE CASCADE
 );
 
 INSERT INTO Room(Room_No, PatientID, Room_Type, Room_Status, Room_Charge) VALUES
-(413, 02, 'Single_Bed_Cabin', 'Available', 1500),
-(414, 04, 'Double_Bed_Cabin', 'UnAvailable', 1600),
-(415, 06, 'Single_Bed_Cabin', 'Available', 1300),
-(416, 08, 'Double_Bed_Cabin', 'UnAvailable', 1500),
-(417, 10, 'Double_Bed_Cabin', 'Available', 1200),
-(418, 12, 'Single_Bed_Cabin', 'Available', 1400),
-(419, 11, 'Double_Bed_Cabin', 'Available', 4000),
-(420, 09, 'Single_Bed_Cabin', 'UnAvailable', 9000),
-(421, 07, 'Single_Bed_Cabin', 'Available', 3500),
-(422, 05, 'Double_Bed_Cabin', 'Available', 2500),
-(423, 03, 'Double_Bed_Cabin', 'UnAvailable', 3500),
-(424, 01, 'Single_Bed_Cabin', 'Available', 1360);
+(413, 02, 'Child_Bed', 'Available', 1500),
+(414, 04, 'Bed', 'UnAvailable', 1600),
+(415, 06, 'Child_Bed', 'Available', 1300),
+(416, 08, 'Bed', 'UnAvailable', 1500),
+(417, 10, 'Bed', 'Available', 1200),
+(418, 12, 'Child_Bed', 'Available', 1400),
+(419, 11, 'Bed', 'Available', 4000),
+(420, 09, 'Child_Bed', 'UnAvailable', 9000),
+(421, 07, 'Child_Bed', 'Available', 3500),
+(422, 05, 'Bed', 'Available', 2500),
+(423, 03, 'Bed', 'UnAvailable', 3500),
+(424, 01, 'Child_Bed', 'Available', 1360);
