@@ -18,7 +18,7 @@
 | Index | Name                   |     ID      |              Email               | Github account             |
 |:------|:-----------------------|:-----------:|:--------------------------------:|:---------------------------|
 | 1     | Trần Quang Trí | ITITIU20325 | tranwangtristudy@gmail.com | WangTris |
-| 2     | Nguyễn Hoàng Luân | ITITIU20012 |  | naulkun7           |
+| 2     | Nguyễn Hoàng Luân | ITITIU20012 | luannguyenn.2k2@gmail.com | naulkun7           |
 | 3     | Nguyễn Hoàng Thiên Phúc         | ITITIU20279 |  |   thienphuc1802           |
 | 4     | Nguyễn Lê Thành Tài    | ITITIU20298 |  |                          |           
 
@@ -30,7 +30,7 @@ Why we choose this topic :question:
 | Index | Task                                                         | PersonInCharge | Contribution |
 |:------|:-------------------------------------------------------------|:--------------:|:------------:|
 | 1     | Write Readme      |   Quang Trí    |          25      |
-| 2     |            |   Hoàng Luân   |          25      |
+| 2     |Build back-end     |   Hoàng Luân   |          25      |
 | 3     |    |  Thiên Phúc     |      25          |
 | 4     |  |     Thành Tài     |          25      |  
 
