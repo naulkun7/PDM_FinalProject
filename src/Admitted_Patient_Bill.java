@@ -205,7 +205,7 @@ public class Admitted_Patient_Bill extends javax.swing.JFrame {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://127.0.0.1:3306/HDS?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
+                    "jdbc:mysql://127.0.0.1:3306/HMSNEW?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
                     "root", "hoangluan");
             Statement st = connection.createStatement();
             String sql = "SELECT patient.PatientID, patient.Patient_Name, patient.Age, patient.DoctorID, lab.Admission_Date, "

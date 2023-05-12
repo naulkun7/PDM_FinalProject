@@ -214,7 +214,7 @@ public class Patient_Release extends javax.swing.JFrame {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://127.0.0.1:3306/HDS?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
+                    "jdbc:mysql://127.0.0.1:3306/HMSNEW?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
                     "root", "hoangluan");
 
             Statement st = connection.createStatement();
@@ -257,7 +257,7 @@ public class Patient_Release extends javax.swing.JFrame {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://127.0.0.1:3306/HDS?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
+                    "jdbc:mysql://127.0.0.1:3306/HMSNEW?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
                     "root", "hoangluan");
 
             String sqlquery = "INSERT INTO Bill(Release_Date,PatientID) VALUES ('" + Rel_Date + "','" + P_Id + "')";

@@ -280,7 +280,7 @@ public class Lab extends javax.swing.JFrame {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://127.0.0.1:3306/HDS?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
+                    "jdbc:mysql://127.0.0.1:3306/HMSNEW?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
                     "root", "hoangluan");
 
             // String labNoToDelete = "308"; // Replace with the Lab_No value to delete
@@ -320,7 +320,7 @@ public class Lab extends javax.swing.JFrame {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://127.0.0.1:3306/HDS?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
+                    "jdbc:mysql://127.0.0.1:3306/HMSNEW?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
                     "root", "hoangluan");
 
             String sqlquery = "INSERT INTO Lab(Lab_No,Admission_Date,DoctorID,PatientID ,Category ,Amount) VALUES ('"
@@ -368,7 +368,7 @@ public class Lab extends javax.swing.JFrame {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://127.0.0.1:3306/HDS?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
+                    "jdbc:mysql://127.0.0.1:3306/HMSNEW?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
                     "root", "hoangluan");
 
             Statement st = connection.createStatement();
